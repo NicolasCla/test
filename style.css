@@ -1,29 +1,55 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #444;
+    background-color: #f4f7f6;
 }
 header {
-    background: #2c3e50;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
     color: #fff;
-    padding: 2rem 0;
+    padding: 4rem 0 6rem;
     text-align: center;
 }
 .container {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: -50px auto 40px;
+    padding: 40px;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    position: relative;
 }
-h1, h2, h3 { color: #2c3e50; }
-header h1 { color: #fff; margin: 0; }
-section { margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; }
-section:last-child { border-bottom: none; }
+h1, h2, h3 { color: #2c3e50; margin-top: 0; margin-bottom: 0.5rem; }
+header h1 { 
+    color: #fff; 
+    margin: 0 0 10px; 
+    font-size: 2.5rem; 
+}
+h2 {
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+section { margin-bottom: 3rem; }
 .skills-list { list-style: none; padding: 0; display: flex; gap: 10px; flex-wrap: wrap; }
-.skills-list li { background: #e0e0e0; padding: 5px 10px; border-radius: 5px; font-size: 0.9em; }
+.skills-list li { 
+    background: #e8f4f8; 
+    color: #2c3e50; 
+    padding: 8px 16px; 
+    border-radius: 50px; 
+    font-size: 0.95em; 
+    font-weight: 500;
+    transition: transform 0.2s, background 0.2s;
+    cursor: default;
+}
+.skills-list li:hover {
+    background: #3498db;
+    color: #fff;
+    transform: translateY(-3px);
+}
+.job { margin-bottom: 2rem; }
+.date { color: #7f8c8d; font-size: 0.9em; font-style: italic; margin-bottom: 0.5rem; display: block; }
 .contact-info { margin-top: 10px; font-style: italic; }
