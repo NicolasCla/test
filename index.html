@@ -1,13 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <title>Nico</title>
-        <meta charset="UTF8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - Nicolas Claverie</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                color: #333;
+                background-color: #f9f9f9;
+            }
+            header {
+                background: #2c3e50;
+                color: #fff;
+                padding: 2rem 0;
+                text-align: center;
+            }
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+            }
+            h1, h2, h3 { color: #2c3e50; }
+            header h1 { color: #fff; margin: 0; }
+            section { margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; }
+            section:last-child { border-bottom: none; }
+            .skills-list { list-style: none; padding: 0; display: flex; gap: 10px; flex-wrap: wrap; }
+            .skills-list li { background: #e0e0e0; padding: 5px 10px; border-radius: 5px; font-size: 0.9em; }
+            .contact-info { margin-top: 10px; font-style: italic; }
+        </style>
     </head>
     <body>
-        <h1>Hello World !</h1>
-        <h2>Test</h2>
-        <h2>Test 2</h2>
-        <h2>Test 3</h2>
+        <header>
+            <h1>Nicolas Claverie</h1>
+            <p>Mon Site Vitrine / CV</p>
+        </header>
+
+        <div class="container">
+            <section>
+                <h2>À propos</h2>
+                <p>Bienvenue sur mon site. Je suis passionné par le développement et la création de projets numériques.</p>
+            </section>
+
+            <section>
+                <h2>Expérience</h2>
+                <h3>Poste Actuel / Projet Récent</h3>
+                <p>Description de vos missions, réalisations et technologies utilisées.</p>
+            </section>
+
+            <section>
+                <h2>Compétences</h2>
+                <ul class="skills-list">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Gestion de projet</li>
+                </ul>
+            </section>
+        </div>
     </body>
 </html>
